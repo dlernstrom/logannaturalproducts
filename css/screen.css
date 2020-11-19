@@ -1,0 +1,523 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+* 	logannaturalproducts.com Screen Styles
+*   screen.css : 2006.06.12
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*	layout
+*   navigation
+*	typography
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*
+*/
+
+* {margin: 0; padding: 0; border:0;}
+body {
+	font-family:"Times New Roman", Times, serif;
+	font-size: 85%;
+	color: #000;	
+	background: #fafcf6;
+	}
+/*++++++++++++++++++++++++++++++++++++++++++typography++++++++++++++++++++++++++++++++++++++++++++++++++*/
+	
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+	}
+a:link {
+	color:#336699;
+	text-decoration: none;
+	}
+a:visited {
+	color:#0c4067;
+	}
+a:hover { color:#990000; text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6{ 
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #669933;
+	letter-spacing: 3px;
+	}
+h1 {
+	font-size: 2.0em;
+	font-weight: normal;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	}
+h2 {
+	font-size: 1.7em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: normal;
+	}
+h3 {
+	font-size: 1.4em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: normal;
+	}
+h4 {
+	font-size: 1.2em;
+	margin: 1.5em 0em 0.5em 0em;
+	font-weight: bold;
+	}
+h5 {
+	font-size: 1.0em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: bold;
+	}
+h6 {
+	font-size: 0.8em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: bold;
+	}
+img {
+	border: 0;
+	}
+ol, ul, li {
+	font-size: 1.0em;
+	line-height: 1.8em;
+	margin-top: 0.2em;
+	margin-bottom: 0.1em; 
+	}
+p {
+	font-size: 1.0em;
+	line-height: 1.8em;
+	margin: 1.2em 0em 1.2em 0em;
+	}
+li > p {
+	margin-top: 0.2em;
+	}
+pre {
+	font-family: monospace;
+	font-size: 1.0em;
+	}
+strong, b {
+	font-weight: bold;
+	}
+sub{
+	font-size: 90%;
+	}
+acronym {
+    cursor: help;
+	border-bottom: 1px dotted black;
+}
+/* ----------------------------------Forms--------------------------------- */
+input {
+    color: black;
+    font-family: arial, verdana, ms sans serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing:2px;
+    }
+textarea {
+    color: #000;
+    font-family: arial, verdana, ms sans serif;
+    font-size: 14pt;
+    font-weight: normal;
+    padding:5px;    
+    border: 1px inset black;
+    }
+textfield{
+	border: 1px inset black;
+    }
+fieldset{
+	float:left;
+	display: block;
+	margin: 30px 20px 0 0;
+	padding: 1em 1em 1em 1em;
+	border: 1px solid #ccc;
+	font-size: 1em;
+	}
+legend{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 18px;
+	}
+label{
+	font-family:"Trebuchet MS", "Gill Sans", Geneva, Arial, Verdana;
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+	}
+radiobutton {
+    }
+input.submit, .nicebutton{
+	border: 3px double #CCCCCC;
+	border-top-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding: 1px;
+	background-color: #FFFFFF;
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	margin:20px 0;
+    }
+input.submit:active, .nicebutton:active{
+	border: 3px double #CCCCCC;
+	border-top-color: #999999;
+	border-left-color: #999999;
+    }
+input.inputreq{
+	text-align: left;
+	border: 1px inset black;
+    color: #000;
+	font-family:"Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding:5px;   
+    background: #fff;
+	}
+/* ----------------------------------Various Styles--------------------------------- */
+.clear-both {
+    clear: both;
+	visibility:hidden;
+	height:0;
+	padding:0;
+	margin:0;
+    }
+.center {
+    text-align: center;
+    }
+.invisible {
+	display:none;
+    }
+.clearright { 
+	margin:-30px;
+	padding:0;
+	clear:right;
+	}
+.info{font-size:1.0em; color:#3c3c3c;}
+.notice{
+	font-size:1.25em;
+	padding:10px;
+	color: #000;
+	margin:5px 0;
+	background:#FFFDCE;
+	border:1px solid #C2C649;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	}
+.notice h5{	
+	margin:0 0 .5em;
+	color:#333;
+	letter-spacing:.1em;
+	}
+.notice p{
+	margin:0;
+	line-height:1.25em;
+	}
+/*++++++++++++++++++++++++++++++++++++++++++++++layout+++++++++++++++++++++++++++++++++++++++*/
+
+#wrapper {
+    }
+.container {
+	margin:0 auto; 
+	width: 1000px;
+	}
+
+#pagetop {
+	background: #cbe098 url(../images/layout/pagetop_bg.gif) bottom left repeat-x;
+	padding:10px 0 10px 0;
+	height:1em;
+	}
+#pagetop p{
+	margin:0;
+	padding:0;
+	color:#666;
+	}
+
+#header {
+	background: #fff url(../images/layout/head_bg.jpg) repeat-x;
+	height:16em;
+	clear:both;
+	padding-top: 40px;
+	padding-right: 0;
+	padding-bottom: 40px;
+	padding-left: 0px;
+
+	}
+#primarycontent {
+	background: url(../images/layout/content_bg.jpg) repeat-x;
+	padding:40px 0 0 0 ;
+	clear:both;
+    }
+#footer {
+	clear:both;
+	padding:50px 0;
+	text-align:center;
+	}
+
+/* ---------------------------------Content--------------------------------- */
+#logo{
+	margin:0 0 0 0;
+	height:124px;
+	width:188px;
+	background:url('../images/layout/logo.gif') no-repeat;
+	}
+#logo span{
+	display:none;
+	}
+
+.preamble{
+	font-size:1.25em;
+	padding:10px;
+	color: #0b2f52;
+	margin:5px 0;
+	background:#e7edf8;
+
+    }
+#content {
+	width:600px;
+	padding:0;
+	margin:0;
+	}
+#content li {
+	list-style-position:outside;
+	margin:0 0 20px 20px;
+	}
+.footnotes p{
+	font-size:0.9em;
+	line-height:1.25em;
+
+	}
+.productgrid {
+	border-top: 2px solid #489;
+	width:100%;
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 12px;
+	}
+.productgrid th {
+	margin: 0;
+	padding: 8px;
+	text-align: left;
+	font-weight: normal;
+	font-size:16px;
+	width:150px;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+
+	border-bottom: 1px solid #ccc;
+	}
+.productgrid td {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	background: #d7e8ae;
+	border-right: 1px solid #eee;
+	border-top: 1px solid #ccc;
+	}
+.productgrid .strong td {
+	font-size: 16px;
+	font-weight: bold;
+	}
+.productgrid .order td{
+	border-top: 2px solid #489;
+	border-bottom: 2px solid #489;
+	border-left: 1px solid #eee;
+	padding:20px;
+	text-align:center;
+	background:#fff;
+	}
+.productgrid th.heading{
+	border-bottom: 2px solid #489;
+	border-left: 1px solid #eee;
+	padding:20px;
+	text-align:center;
+	font-size: 18px;
+	background:#fff;
+	}
+.productgrid .heading h4{
+	margin:0;
+	padding:0;
+	}
+.productgrid .compare {
+	border-bottom: 2px solid #489;
+	white-space: nowrap;
+	text-align: center;
+	}
+.productgrid .compare th{
+	white-space: nowrap;
+	text-align: center;
+	}
+.productgrid th.company{
+	white-space: nowrap;
+	text-align: right;
+	}
+/* ---------------------------------sidebar--------------------------------- */
+.sidebar {
+	float:right;
+	width:300px;
+	padding: 20px;
+	margin:0;
+	background:#fff;
+	border:1px #ccc solid;
+	}
+.sidebar h4{
+	border-bottom:1px solid #aaa;
+	letter-spacing:0;
+	}
+.sidebar ul{
+
+	}
+.sidebar li {
+	list-style-position:outside;
+	margin:0 0 20px 20px;
+
+	}
+/* ----------------------------------Footer--------------------------------- */
+#footerlinks {
+	margin-bottom: 1em;
+	margin: 0;
+	padding: 0;
+	}
+#footerlinks p {
+	font-size:12px;
+	margin: 0;
+	padding: 0;
+	}
+#footerlinks li {
+	display:inline;
+	border-left: 1px solid #ccc;
+	list-style-type: none;
+	line-height: 1.1em;
+	margin: 0 .5em 0 -.5em;
+	padding: 0 .5em 0 .5em;
+	}
+#footerlinks li.firstlink {
+	border-left:0;
+	}
+#footerlinks li a {
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #369;
+	margin: 0 -2px 0 0;
+	font-size:14px;
+	line-height:18px;
+    }
+#footerlinks li a:hover {
+	color:#990000;
+	text-decoration:underline;
+    }
+/*++++++++++++++++++++++++++++++++++++++++++navigation++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* ----------------------------------LEVEL 1--------------------------------- */
+#nav {
+	margin:.75em 0 0 0;
+	width: 40em;
+	list-style-type: none;
+	float:right;
+	position: relative;
+	height: 1.05em;
+	white-space: nowrap;
+
+	}
+
+#nav li {
+	display: inline;
+	float:left;
+	padding:.5em 0;
+	border-bottom:1px solid #f3f3f3;
+
+    }
+
+#nav li a {
+	font-size:1.25em;	
+	text-transform:lowercase;
+	letter-spacing:0.12em;
+	display: block;
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	border-left: 1px solid #eee;
+	color: #777;
+
+}
+
+#nav li a:hover {
+	text-decoration:underline;
+	color:#393;
+	}
+#nav a#nav-contact{
+	padding-right:0;
+	}
+#nav a#nav-company {
+	}
+#nav a#nav-products {
+	padding-left:0;
+	border-left: none;
+
+	}
+#nav a.firstlink {
+	padding-left:0;
+	border-left: none;
+
+	}
+/* ----------------------------------LEVEL 2--------------------------------- */
+
+#nav ul {
+	width:40em;
+	position: absolute;
+	top: 49px;
+	height: 123px;
+	white-space: nowrap;
+	left: 24px;
+	}
+
+#nav ul li {
+	float:left;
+	border-bottom:none;
+
+	}
+
+#nav ul li a {
+	padding: .5em 1em;
+	color: #777;
+	font-size:70%;
+	}
+
+#nav ul li a:hover{
+	color: #00c;
+	text-decoration: underline;
+	/* IE5/Mac disappearing item fix */
+	}
+* html > body #nav, * html > body #nav ul {
+	width: 387px;
+	/* IE5/Mac fixed width fix */
+	}
+/* ----------------------------------UTILITY NAVIGATION--------------------------------- */
+#utilnav {
+	margin:0;
+	padding:0;
+	float:right;
+	text-align:right;
+
+    }
+#utilnav dt {
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.75em;
+    }
+#utilnav dd {
+	text-align:right;
+	display: inline;
+	list-style-type: none;
+	 }
+#utilnav #utilnav-small a  ,#utilnav #utilnav-medium a ,#utilnav #utilnav-large a {
+	float:left;
+	display:block;
+	width:16px;
+	height:16px;
+	margin:0 0 0 10px;
+	}
+#utilnav #utilnav-small a:hover  ,#utilnav #utilnav-medium a:hover ,#utilnav #utilnav-large a:hover {
+	text-decoration:none;
+	}
+#utilnav #utilnav-small span ,#utilnav #utilnav-medium span,#utilnav #utilnav-large span {
+display:none;
+	}
+
+#utilnav #utilnav-small a {
+	background:url(../images/layout/font1.gif) top left no-repeat;
+	}
+#utilnav #utilnav-medium a {
+	background:url(../images/layout/font2.gif) top left no-repeat;
+	}
+#utilnav #utilnav-large a {
+	background:url(../images/layout/font3.gif) top left no-repeat;
+	}
